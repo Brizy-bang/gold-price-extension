@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <span class="logo">Au</span>
+    <h1>实时金价</h1>
+    <span id="updated" class="updated">--</span>
+    <button id="refresh" title="刷新">⟳</button>
+  </header>
+
+  <section class="hero">
+    <div class="card" id="cardXau">
+      <div class="card-title">国际现货金 <span class="unit">$/oz</span></div>
+      <div class="card-price">--</div>
+      <div class="card-sub">
+        <span class="chg">--</span>
+        <span class="cny" title="按美元汇率折算人民币/克"></span>
+      </div>
+      <svg class="spark" id="sparkXau" viewBox="0 0 320 40" preserveAspectRatio="none"></svg>
+    </div>
+    <div class="card" id="cardAu">
+      <div class="card-title">沪金 Au99.99 <span class="unit">元/克</span></div>
+      <div class="card-price">--</div>
+      <div class="card-sub">
+        <span class="chg">--</span>
+        <span class="cny"></span>
+      </div>
+      <svg class="spark" id="sparkAu" viewBox="0 0 320 40" preserveAspectRatio="none"></svg>
+    </div>
+  </section>
+
+  <section>
+    <h2>国际现货 <span class="unit">美元/盎司</span></h2>
+    <div class="cols">
+      <span class="c-name">品类</span><span class="c-ba">卖出</span><span class="c-ba">买入</span><span class="c-hl">高/低</span>
+    </div>
+    <div id="spotRows" class="rows"></div>
+  </section>
+
+  <section>
+    <h2>上海金交所 <span class="unit">元/克</span></h2>
+    <div class="cols">
+      <span class="c-name">品类</span><span class="c-ba">卖出</span><span class="c-ba">买入</span><span class="c-hl">高/低</span>
+    </div>
+    <div id="exchangeRows" class="rows"></div>
+  </section>
+
+  <section>
+    <h2>品牌金饰 <span class="unit">元/克</span></h2>
+    <div class="cols">
+      <span class="c-name">品牌</span><span class="c-ba">价格</span><span class="c-ba">涨跌</span><span class="c-hl">更新</span>
+    </div>
+    <div id="brandRows" class="rows"></div>
+  </section>
+
+  <section>
+    <h2>银行金条 <span class="unit">元/克</span></h2>
+    <div class="cols">
+      <span class="c-name">银行</span><span class="c-ba">价格</span><span class="c-ba">涨跌</span><span class="c-hl">更新</span>
+    </div>
+    <div id="bankRows" class="rows"></div>
+  </section>
+
+  <footer>
+    <span class="src">来源: 腾讯 / 金投</span>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>

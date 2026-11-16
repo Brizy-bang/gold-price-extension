@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F9DC8A"/>
+      <stop offset="0.45" stop-color="#F2C964"/>
+      <stop offset="1" stop-color="#E0A93E"/>
+    </linearGradient>
+    <linearGradient id="goldText" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F5D57D"/>
+      <stop offset="1" stop-color="#E3AD44"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="128" height="128" rx="22" fill="#1A1A1A"/>
+  <polygon points="45,38 83,38 95,69 33,69" fill="url(#gold)"/>
+  <text x="64" y="90" text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="800"
+        font-style="italic" fill="url(#goldText)">Au</text>
+</svg>

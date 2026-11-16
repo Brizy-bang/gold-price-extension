@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "实时金价",
+  "version": "1.2.0",
+  "description": "弹窗实时查看国际现货（金/银/铂/钯）、上海金交所、品牌金饰与银行金条价格，含买卖双价与高低价",
+  "permissions": [
+    "alarms",
+    "storage",
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": [
+    "https://qt.gtimg.cn/*",
+    "https://api.jijinhao.com/*",
+    "https://hq.sinajs.cn/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "实时金价",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
